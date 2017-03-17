@@ -1,4 +1,4 @@
-update=Tue 14 Mar 2017 08:36:01 PM CDT
+update=Thu 16 Mar 2017 08:24:58 PM CDT
 version=1
 last_client=kicad
 [pcbnew]
@@ -58,5 +58,4 @@ LibName26=opto
 LibName27=atmel
 LibName28=contrib
 LibName29=valves
-LibName30=sret
-LibName31=lib/sret
+LibName30=lib/sret
