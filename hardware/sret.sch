@@ -61,7 +61,7 @@ U 1 1 58C732BA
 P 13500 1600
 F 0 "GPIO1" H 13500 2650 50  0000 C CNN
 F 1 "CONN_02X20" V 13500 1600 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 13500 650 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20" H 13500 650 50  0001 C CNN
 F 3 "" H 13500 650 50  0000 C CNN
 	1    13500 1600
 	1    0    0    -1  
@@ -72,7 +72,7 @@ U 1 1 58C73B2F
 P 13500 3750
 F 0 "EMC1" H 13500 4800 50  0000 C CNN
 F 1 "CONN_02X20" V 13500 3750 50  0000 C CNN
-F 2 "Pin_Headers:Pin_Header_Straight_2x20" H 13500 2800 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x20" H 13500 2800 50  0001 C CNN
 F 3 "" H 13500 2800 50  0000 C CNN
 	1    13500 3750
 	1    0    0    -1  
@@ -94,7 +94,7 @@ U 1 1 58C73C0B
 P 15550 3850
 F 0 "JTAG1" H 15550 4050 50  0000 C CNN
 F 1 "CONN_02X03" H 15550 3650 50  0000 C CNN
-F 2 "Connect:RJ45_TRANSFO" H 15550 2650 50  0001 C CNN
+F 2 "Socket_Strips:Socket_Strip_Straight_2x03" H 15550 2650 50  0001 C CNN
 F 3 "" H 15550 2650 50  0000 C CNN
 	1    15550 3850
 	1    0    0    -1  
@@ -1219,9 +1219,9 @@ EMC_A3
 Text Label 7500 2050 0    60   ~ 0
 EMC_A4
 Text Label 6400 1450 1    60   ~ 0
-U2_TXD
+U2_TX
 Text Label 6200 1450 1    60   ~ 0
-U2_RXD
+U2_RX
 Text Label 4700 1450 1    60   ~ 0
 WAKEUP
 Text Label 4800 1450 1    60   ~ 0
@@ -1231,12 +1231,12 @@ RESET#
 Text Label 13750 2450 0    60   ~ 0
 RESET#
 $Comp
-L SW_PUSH SW3
+L SW_PUSH SW2
 U 1 1 58D06D7A
 P 1550 8800
-F 0 "SW3" H 1700 8910 50  0000 C CNN
+F 0 "SW2" H 1700 8910 50  0000 C CNN
 F 1 "RESET" H 1550 8720 50  0000 C CNN
-F 2 "" H 1550 8800 50  0001 C CNN
+F 2 "lib:button" H 1550 8800 50  0001 C CNN
 F 3 "" H 1550 8800 50  0000 C CNN
 	1    1550 8800
 	1    0    0    -1  
@@ -1317,9 +1317,9 @@ Text Label 5100 1450 1    60   ~ 0
 RTC2
 Text Label 5200 1450 1    60   ~ 0
 RTC1
-Text Label 900  9850 2    60   ~ 0
-RTC1
 Text Label 1600 9850 0    60   ~ 0
+RTC1
+Text Label 950  9850 2    60   ~ 0
 RTC2
 $Comp
 L C C6
@@ -1577,7 +1577,7 @@ U 1 1 58D77944
 P 4650 9400
 F 0 "SW1" H 4800 9510 50  0000 C CNN
 F 1 "DFU" H 4650 9320 50  0000 C CNN
-F 2 "" H 4650 9400 50  0001 C CNN
+F 2 "lib:button" H 4650 9400 50  0001 C CNN
 F 3 "" H 4650 9400 50  0000 C CNN
 	1    4650 9400
 	1    0    0    -1  
@@ -2312,7 +2312,7 @@ CANL_0
 Text Label 10600 900  0    60   ~ 0
 CANH_0
 Text Label 10600 1600 0    60   ~ 0
-CANL_0
+CANL_1
 Text Label 13250 1550 2    60   ~ 0
 CANH_0
 Text Label 13250 1650 2    60   ~ 0
@@ -2719,14 +2719,14 @@ Connection ~ 1300 650
 Connection ~ 1500 650 
 Connection ~ 1700 650 
 Wire Wire Line
-	700  650  2700 650 
+	700  650  3500 650 
 Connection ~ 900  950 
 Connection ~ 1100 950 
 Connection ~ 1300 950 
 Connection ~ 1500 950 
 Connection ~ 1700 950 
 Wire Wire Line
-	700  950  2700 950 
+	700  950  3500 950 
 Wire Wire Line
 	2400 9850 2200 9850
 Wire Wire Line
@@ -3146,10 +3146,10 @@ $EndComp
 Wire Wire Line
 	10050 9900 10050 9850
 $Comp
-L GND #PWR?
+L GND #PWR088
 U 1 1 58CB8592
 P 11150 8500
-F 0 "#PWR?" H 11150 8250 50  0001 C CNN
+F 0 "#PWR088" H 11150 8250 50  0001 C CNN
 F 1 "GND" H 11150 8350 50  0000 C CNN
 F 2 "" H 11150 8500 50  0000 C CNN
 F 3 "" H 11150 8500 50  0000 C CNN
@@ -3158,4 +3158,56 @@ F 3 "" H 11150 8500 50  0000 C CNN
 $EndComp
 Wire Wire Line
 	11100 8500 11150 8500
+$Comp
+L C C29
+U 1 1 58CCCA62
+P 2900 800
+F 0 "C29" H 2925 900 50  0000 L CNN
+F 1 "100nF" H 2800 800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 2938 650 50  0001 C CNN
+F 3 "" H 2900 800 50  0000 C CNN
+	1    2900 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C30
+U 1 1 58CCCBA0
+P 3100 800
+F 0 "C30" H 3125 900 50  0000 L CNN
+F 1 "100nF" H 3000 800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3138 650 50  0001 C CNN
+F 3 "" H 3100 800 50  0000 C CNN
+	1    3100 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C31
+U 1 1 58CCCCE1
+P 3300 800
+F 0 "C31" H 3325 900 50  0000 L CNN
+F 1 "100nF" H 3200 800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3338 650 50  0001 C CNN
+F 3 "" H 3300 800 50  0000 C CNN
+	1    3300 800 
+	1    0    0    -1  
+$EndComp
+$Comp
+L C C32
+U 1 1 58CCCE21
+P 3500 800
+F 0 "C32" H 3525 900 50  0000 L CNN
+F 1 "100nF" H 3400 800 50  0000 L CNN
+F 2 "Capacitors_SMD:C_0603_HandSoldering" H 3538 650 50  0001 C CNN
+F 3 "" H 3500 800 50  0000 C CNN
+	1    3500 800 
+	1    0    0    -1  
+$EndComp
+Connection ~ 3300 950 
+Connection ~ 3100 950 
+Connection ~ 2700 950 
+Connection ~ 2900 950 
+Connection ~ 3300 650 
+Connection ~ 3100 650 
+Connection ~ 2700 650 
+Connection ~ 2900 650 
 $EndSCHEMATC
