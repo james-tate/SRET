@@ -6,6 +6,9 @@ http://www.nxp.com/products/microcontrollers-and-processors/arm-processors/lpc-m
 
 Aiming for a alpha version May 2017!
 
+!(https://raw.githubusercontent.com/james-tate/SRET/master/hardware/sret_front.png)
+!(https://raw.githubusercontent.com/james-tate/SRET/master/hardware/sret_back.png)
+
 List of tools that will be implemented:
 	flash reader
 	jtag
