@@ -29,7 +29,6 @@ version=1
 version=1
 LibDir=
 [eeschema/libraries]
-LibName1=sret-rescue
 LibName2=power
 LibName3=device
 LibName4=transistors

@@ -1,5 +1,4 @@
 EESchema Schematic File Version 2
-LIBS:sret-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
