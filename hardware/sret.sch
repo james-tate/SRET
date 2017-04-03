@@ -1043,8 +1043,6 @@ Text Label 15000 8550 0    60   ~ 0
 CLK0(OUT)
 Text Label 7500 3750 0    60   ~ 0
 SGPIO11/USB1_VBUS
-Text Label 15000 8350 0    60   ~ 0
-SGPIO11
 Text Label 7500 3650 0    60   ~ 0
 SCL
 Text Label 7500 3550 0    60   ~ 0
@@ -3261,4 +3259,6 @@ Text Label 15800 2850 2    60   ~ 0
 SD_CLK
 Wire Wire Line
 	16100 2850 15800 2850
+Text Label 15000 8350 0    60   ~ 0
+SGPIO11/USB1_VBUS
 $EndSCHEMATC
